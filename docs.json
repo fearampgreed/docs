@@ -1,0 +1,71 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "NACE Billing Documentation",
+  "colors": {
+    "primary": "#16A34A",
+    "light": "#07C983",
+    "dark": "#15803D"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Getting started",
+            "pages": [
+              "index",
+              "getting-started"
+            ]
+          },
+          {
+            "group": "NAPA & Billing",
+            "pages": [
+              "billing/overview",
+              "billing/napa",
+              "billing/invoice-types",
+              "billing/disputes"
+            ]
+          },
+          {
+            "group": "Billing app",
+            "pages": [
+              "frontend/overview",
+              "frontend/using-the-app",
+              "frontend/environments"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "help/contacts"
+            ]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Mintlify Docs",
+          "href": "https://mintlify.com/docs",
+          "icon": "book-open-cover"
+        }
+      ]
+    }
+  },
+  "navbar": {
+    "links": []
+  },
+  "footer": {},
+  "contextual": {
+    "options": [
+      "copy",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
+  }
+}

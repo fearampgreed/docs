@@ -1,0 +1,39 @@
+---
+title: "How to use NAPA"
+description: "The NAPA process: from contract and timesheet to invoice"
+---
+
+## How NAPA runs
+
+NAPA can be triggered in two ways:
+
+### Automatic (Barton timesheets)
+
+- When timesheets (and approved expenses) are approved in **Barton**, they sync into our system (about every hour).
+- NAPA then pulls in the matching **contract** from Salesforce and **travel expenses** from Navan (by assignment).
+- It consolidates the data, applies billing rules, and generates the invoice.
+
+### Manual (upload)
+
+- You can also **upload documents** in the Billing app: contract + timesheet + expenses, or contract + expenses.
+- NAPA uses those documents to build the invoice the same way.
+
+## What NAPA does with the data
+
+1. **Consolidate** — Combine contract, timesheet, and expense data.
+2. **Apply billing rules** — Calculate line items according to the contract (rates, caps, etc.).
+3. **Check alignment** — If the rules match the contract, NAPA generates the invoice. If something doesn’t match, it flags the case for **manual review**.
+4. **Invoice draft** — A draft invoice is created.
+5. **Risk assessment** — The system may **auto-approve** low-risk items or send others to you for **review and approval**.
+6. **Approval** — You can **review, edit if needed, approve, or reject**. Rejected items can be corrected and sent through again.
+7. **Delivery** — Once approved, the invoice is synced to **NetSuite**, made available in the **client portal**, and **email notification** is sent as configured.
+
+## Product sync (NetSuite)
+
+Products are synced from **NetSuite** on a schedule (e.g. daily) so that when we export invoices, line items match the right products in NetSuite.
+
+## Next steps
+
+- **Types of invoices** (client invoice vs provider payout): [Invoice types](/billing/invoice-types)
+- **When a client disputes**: [Disputes](/billing/disputes)
+- **Using the app**: [Using the Billing app](/frontend/using-the-app)
